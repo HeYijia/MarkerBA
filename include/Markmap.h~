@@ -1,0 +1,28 @@
+#ifndef MAP_H
+#define MAP_H
+
+#include "Eigen/Core"
+namespace markerslam {
+
+struct Marker
+{
+    int id;
+    Eigen::Matrix4d pxy_w;    //  every column save a coner's coordinate in world frame
+    Eigen::Vector4d cxy_w;    //  marker center coordinate in world frame
+
+    Eigen::Matrix4d T_w_m;   //  marker to world
+    //Eigen::Matrix4d T_c_m;    // marker to frame;
+};
+
+class Map
+{
+
+public:
+  std::vector< Marker > allmarker_;
+
+};
+
+}
+
+
+#endif

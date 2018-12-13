@@ -1,0 +1,4 @@
+/home/hyj/my_slam/maker_bundle_adjustment/src/build/CMakeFiles/edit_cache.dir
+/home/hyj/my_slam/maker_bundle_adjustment/src/build/CMakeFiles/rebuild_cache.dir
+/home/hyj/my_slam/maker_bundle_adjustment/src/build/CMakeFiles/test_g2o_marker.dir
+/home/hyj/my_slam/maker_bundle_adjustment/src/build/CMakeFiles/MarkerBA.dir

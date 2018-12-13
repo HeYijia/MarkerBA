@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(MarkerSLAM)
+
+set(CMAKE_CXX_FLAGS "-std=c++11 -Ofast")
+SET(CMAKE_BUILD_TYPE Debug)
+
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+#find_package(catkin REQUIRED COMPONENTS)
+
+find_package(cmake_modules)
+find_package(Eigen REQUIRED)
+find_package(OpenCV REQUIRED)
+
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/CMakeModules/")
+
+include_directories(include include/AprilTags)
+include_directories(
+  ${Eigen_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+
+)
+
+add_executable(agv_linedect agv_linedect.cpp)
+target_link_libraries(agv_linedect ${OpenCV_LIBS})
