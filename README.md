@@ -4,4 +4,4 @@ You can run this demo code to learning how can we use a planar marker in bundle 
 ## You can find the math detail in note file
 In order to save the plannar constraint, The Marker is paramter with a Lie se3 instead of using conner coordinates.
  
-<center> ![marker_se3](https://github.com/HeYijia/MarkerBA/blob/master/note/m.png) </center>
+<center> ![marker_se3](https://github.com/HeYijia/MarkerBA/blob/master/note/m.png?raw=true) </center>
